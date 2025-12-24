@@ -28,6 +28,7 @@
 }
 
 body {
+  @apply uppercase;
   background: var(--background);
   color: var(--foreground);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
