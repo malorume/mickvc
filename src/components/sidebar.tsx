@@ -27,7 +27,7 @@ export const Sidebar = () => {
     <div className="w-full sm:h-screen flex flex-col justify-between container">
       <div></div>
       <div className="">
-        <ul className="flex flex-col gap-2 sm:p-4">
+        <ul className="flex flex-col gap-1 sm:p-4">
           {links.map((link, key) => (
             <li
               key={key}
@@ -38,7 +38,7 @@ export const Sidebar = () => {
                   : "text-link hover:text-link-hover"
               )}
             >
-              <span>{key + 1}</span>
+              <span className="w-4">{key + 1}</span>
               <Link href={link.href} className="w-full">
                 {link.label}
               </Link>
