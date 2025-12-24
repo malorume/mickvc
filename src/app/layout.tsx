@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { Domine, Geist, Bebas_Neue, Montserrat, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "../components";
+import { Footer, Sidebar } from "@/components";
 
 const montserrat = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
-  title: "mickvc*",
-  description: "next-level b2b solutions",
+  title: "mvc*",
+  description: "next-level b2b solutions.",
 };
 
 export default function RootLayout({
@@ -34,7 +29,7 @@ export default function RootLayout({
           </div>
           <div className="w-full flex flex-col bg-background justify-start">
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
       </body>

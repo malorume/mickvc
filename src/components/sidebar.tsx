@@ -3,6 +3,7 @@
 import { cn } from "@/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Logo } from "./logo";
 
 type SidebarLink = {
   href: string;
@@ -25,7 +26,9 @@ export const Sidebar = () => {
 
   return (
     <div className="w-full sm:h-screen flex flex-col justify-between container">
-      <div></div>
+      <div className="w-full flex flex-row justify-center items-center">
+        <Logo />
+      </div>
       <div className="">
         <ul className="flex flex-col gap-1 sm:p-4">
           {links.map((link, key) => (
